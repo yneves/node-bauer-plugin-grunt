@@ -16,9 +16,13 @@ Using `bauer` to run grunt tasks doesn't require `grunt-cli` since it loads the 
 module.exports = function(Promise) {
   return Promise.grunt({
     tasks: ["js","css"],
-    env: "dev"
+    options: {
+      env: "development"
+    }
   }).then(function() {
     // build finished
+  }).catch(function() {
+    // build failed
   });
 };
 ```
