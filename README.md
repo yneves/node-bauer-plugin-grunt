@@ -30,7 +30,7 @@ module.exports = function(Promise) {
   workers: 1,
   slots: 1,
   delay: 0,
-  gruntfile: "path/to/Gruntfile.js"
+  gruntFile: "path/to/Gruntfile.js"
 }
 ```
 

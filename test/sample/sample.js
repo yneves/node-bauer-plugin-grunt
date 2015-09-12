@@ -8,7 +8,9 @@ var Crawler = require("bauer-crawler");
 
 var crawler = new Crawler({
   config: {
-    
+    grunt: {
+      gruntFile: "./Gruntfile.js"
+    }
   }
 });
 
@@ -17,10 +19,11 @@ crawler.loadPlugin(__dirname + "/../../");
 crawler.start(function(Promise) {
   
   return Promise.grunt({
-    tasks: ["dev"],
-    end: "dev",
-    color: true
-  });
+      tasks: ["less"],
+      options: {}
+    }).catch(function(error) {
+      assert.ok(error instanceof Error);
+    });
 });
 
 // - -------------------------------------------------------------------- - //
