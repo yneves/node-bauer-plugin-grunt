@@ -1,6 +1,6 @@
 {
   "name": "bauer-plugin-grunt",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Plugin for bauer to run grunt tasks.",
   "keywords": [
     "multi-thread",
@@ -17,7 +17,7 @@
   "author": {
     "name": "Yuri Neves Silveira",
     "url": "http://yneves.com",
-    "email": "npm@yneves.com"
+    "email": "yurinevessilveira@gmail.com"
   },
   "repository": {
     "type": "git",
@@ -27,10 +27,10 @@
     "test": "mocha"
   },
   "devDependencies": {
-    "mocha": ">=1.0.0"
+    "mocha": "^2.3.4"
   },
   "dependencies": {
-    "bauer-crawler": "*",
+    "bauer-crawler": "^0.2.6",
     "bauer-factory": "*"
   },
   "main": "lib/index.js"
